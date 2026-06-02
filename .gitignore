@@ -1,8 +1,19 @@
 .DS_Store
 
+# Environment and local secrets
+.env
+.env.*
+secrets/
+*.p12
+*.p8
+*.cer
+*.mobileprovision
+ExportOptions.plist
+
 # Xcode
 DerivedData/
 build/
+*.xcarchive
 *.xcuserstate
 xcuserdata/
 *.moved-aside
@@ -13,6 +24,18 @@ xcuserdata/
 .build/
 Package.resolved
 
+# Node / website
+node_modules/
+website/node_modules/
+website/dist/
+website/.vite/
+website/.vercel/
+*.tsbuildinfo
+
 # App artifacts
 *.app
 *.dSYM
+*.dmg
+*.zip
+*.app.zip
+*.log

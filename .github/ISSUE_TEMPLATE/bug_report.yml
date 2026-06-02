@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a reproducible GravityWell bug
+title: "Bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve GravityWell. Do not include credentials, Pi-hole session IDs, private hostnames, private IPs, or Tailscale hostnames in public issues.
+  - type: input
+    id: gravitywell-version
+    attributes:
+      label: GravityWell version
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: macOS 14.6 Sonoma
+    validations:
+      required: true
+  - type: input
+    id: pihole-version
+    attributes:
+      label: Pi-hole version
+      placeholder: Pi-hole v6.x
+    validations:
+      required: true
+  - type: dropdown
+    id: connection-type
+    attributes:
+      label: Connection type
+      options:
+        - LAN
+        - VPN
+        - Tailscale
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open GravityWell
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Redact private network details before posting.
+    validations:
+      required: false

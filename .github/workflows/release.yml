@@ -1,0 +1,72 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build release artifacts
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Resolve release version
+        id: version
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=$GITHUB_REF_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Build unsigned archive fallback
+        run: |
+          xcodebuild \
+            -project GravityWell.xcodeproj \
+            -scheme GravityWell \
+            -configuration Release \
+            -destination 'generic/platform=macOS' \
+            -archivePath "$PWD/build/GravityWell.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            archive
+
+      - name: Package ZIP fallback
+        run: |
+          mkdir -p dist
+          APP_PATH="$PWD/build/GravityWell.xcarchive/Products/Applications/GravityWell.app"
+          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "dist/GravityWell-${{ steps.version.outputs.version }}.zip"
+
+      - name: Package DMG fallback
+        run: |
+          mkdir -p dmg-root
+          cp -R "$PWD/build/GravityWell.xcarchive/Products/Applications/GravityWell.app" dmg-root/
+          ln -s /Applications dmg-root/Applications
+          hdiutil create \
+            -volname "GravityWell" \
+            -srcfolder dmg-root \
+            -ov \
+            -format UDZO \
+            "dist/GravityWell-${{ steps.version.outputs.version }}.dmg"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: GravityWell ${{ steps.version.outputs.tag }}
+          generate_release_notes: true
+          files: |
+            dist/GravityWell-${{ steps.version.outputs.version }}.zip
+            dist/GravityWell-${{ steps.version.outputs.version }}.dmg
+
+      - name: Signing and notarization note
+        run: |
+          echo "This workflow currently creates unsigned fallback artifacts."
+          echo "Add Developer ID certificate, notarytool credentials, Sparkle signing, and appcast generation before the public v1.0.0 tag."
