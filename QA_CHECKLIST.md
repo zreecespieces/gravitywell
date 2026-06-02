@@ -1,0 +1,26 @@
+# GravityWell Manual QA Checklist
+
+- Fresh launch with no settings shows setup state.
+- Invalid URL is rejected or clearly reported.
+- Bad credential shows authentication failed.
+- Unreachable Pi-hole shows offline state.
+- Invalid TLS certificate shows TLS error when self-signed is disabled.
+- Self-signed certificate works only when explicitly enabled.
+- Successful connection shows live stats.
+- Menu bar display mode updates immediately.
+- Poll interval updates without relaunch.
+- Manual refresh updates dashboard.
+- Open Dashboard opens the configured Pi-hole URL.
+- Disable Blocking for 5 minutes works.
+- Disable Blocking for 30 minutes works.
+- Disable Blocking for 1 hour works.
+- Re-enable Blocking works.
+- Settings survive app restart.
+- Credential survives app restart through Keychain.
+- App works with a Tailscale HTTPS URL.
+- App works in dark mode.
+- App works in light mode.
+- App does not expose credential in logs.
+- App does not expose session ID in logs.
+- Launch at login can be enabled.
+- Launch at login can be disabled.

@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* GravityWellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* GravityWellApp.swift */; };
+		A10000000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* AppState.swift */; };
+		A60000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60000000000000000000011 /* AppDelegate.swift */; };
+		A60000000000000000000002 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60000000000000000000012 /* StatusBarController.swift */; };
+		A10000000000000000000003 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* MenuBarView.swift */; };
+		A10000000000000000000004 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* SettingsView.swift */; };
+		A10000000000000000000005 /* PollInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* PollInterval.swift */; };
+		A10000000000000000000006 /* MenuBarDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* MenuBarDisplayMode.swift */; };
+		A10000000000000000000007 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* KeychainService.swift */; };
+		A10000000000000000000008 /* PiHoleSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* PiHoleSummary.swift */; };
+		A10000000000000000000009 /* TopDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* TopDomain.swift */; };
+		A1000000000000000000000A /* TopClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001A /* TopClient.swift */; };
+		A1000000000000000000000B /* PiHoleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001B /* PiHoleStatus.swift */; };
+		A1000000000000000000000C /* PiHoleAPIProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001C /* PiHoleAPIProviding.swift */; };
+		A1000000000000000000000D /* PiHoleAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001D /* PiHoleAPIError.swift */; };
+		A1000000000000000000000E /* NetworkTrustService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001E /* NetworkTrustService.swift */; };
+		A1000000000000000000000F /* PiHoleAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001F /* PiHoleAPIClient.swift */; };
+		A20000000000000000000001 /* MonitoringProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* MonitoringProvider.swift */; };
+		A20000000000000000000002 /* MonitoringSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* MonitoringSnapshot.swift */; };
+		A20000000000000000000003 /* MonitoringControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* MonitoringControl.swift */; };
+		A20000000000000000000004 /* MonitoringProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* MonitoringProviderError.swift */; };
+		A20000000000000000000005 /* PiHoleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* PiHoleProvider.swift */; };
+		A30000000000000000000001 /* PollingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000011 /* PollingService.swift */; };
+		A30000000000000000000002 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000012 /* Formatters.swift */; };
+		A30000000000000000000003 /* DashboardPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000013 /* DashboardPopoverView.swift */; };
+		A30000000000000000000004 /* StatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000014 /* StatsCardView.swift */; };
+		A30000000000000000000005 /* TopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000015 /* TopListView.swift */; };
+		A30000000000000000000006 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30000000000000000000016 /* ErrorStateView.swift */; };
+		A40000000000000000000001 /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000011 /* LaunchAtLoginService.swift */; };
+		A40000000000000000000002 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000012 /* Logger.swift */; };
+		A40000000000000000000003 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000013 /* Constants.swift */; };
+		A50000000000000000000001 /* FormattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50000000000000000000011 /* FormattersTests.swift */; };
+		A50000000000000000000002 /* PiHoleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50000000000000000000012 /* PiHoleProviderTests.swift */; };
+		A70000000000000000000001 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A70000000000000000000011 /* AppIcon.icns */; };
+		A70000000000000000000002 /* AppIcon1024-White.png in Resources */ = {isa = PBXBuildFile; fileRef = A70000000000000000000014 /* AppIcon1024-White.png */; };
+		A70000000000000000000003 /* gravity-well.svg in Resources */ = {isa = PBXBuildFile; fileRef = A70000000000000000000015 /* gravity-well.svg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000010 /* GravityWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000011 /* GravityWellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityWellApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A60000000000000000000011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60000000000000000000012 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A10000000000000000000013 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A10000000000000000000015 /* PollInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollInterval.swift; sourceTree = "<group>"; };
+		A10000000000000000000016 /* MenuBarDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarDisplayMode.swift; sourceTree = "<group>"; };
+		A10000000000000000000017 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		A10000000000000000000018 /* PiHoleSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleSummary.swift; sourceTree = "<group>"; };
+		A10000000000000000000019 /* TopDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDomain.swift; sourceTree = "<group>"; };
+		A1000000000000000000001A /* TopClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopClient.swift; sourceTree = "<group>"; };
+		A1000000000000000000001B /* PiHoleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleStatus.swift; sourceTree = "<group>"; };
+		A1000000000000000000001C /* PiHoleAPIProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleAPIProviding.swift; sourceTree = "<group>"; };
+		A1000000000000000000001D /* PiHoleAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleAPIError.swift; sourceTree = "<group>"; };
+		A1000000000000000000001E /* NetworkTrustService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTrustService.swift; sourceTree = "<group>"; };
+		A1000000000000000000001F /* PiHoleAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleAPIClient.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* MonitoringProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringProvider.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* MonitoringSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringSnapshot.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* MonitoringControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringControl.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* MonitoringProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringProviderError.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* PiHoleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleProvider.swift; sourceTree = "<group>"; };
+		A30000000000000000000011 /* PollingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingService.swift; sourceTree = "<group>"; };
+		A30000000000000000000012 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		A30000000000000000000013 /* DashboardPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPopoverView.swift; sourceTree = "<group>"; };
+		A30000000000000000000014 /* StatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCardView.swift; sourceTree = "<group>"; };
+		A30000000000000000000015 /* TopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListView.swift; sourceTree = "<group>"; };
+		A30000000000000000000016 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		A40000000000000000000010 /* GravityWellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GravityWellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40000000000000000000011 /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
+		A40000000000000000000012 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A40000000000000000000013 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A50000000000000000000011 /* FormattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersTests.swift; sourceTree = "<group>"; };
+		A50000000000000000000012 /* PiHoleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiHoleProviderTests.swift; sourceTree = "<group>"; };
+		A70000000000000000000011 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		A70000000000000000000012 /* AppIcon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon1024.png; sourceTree = "<group>"; };
+		A70000000000000000000013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70000000000000000000014 /* AppIcon1024-White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon1024-White.png"; sourceTree = "<group>"; };
+		A70000000000000000000015 /* gravity-well.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gravity-well.svg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000030 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000031 /* GravityWell */,
+				A50000000000000000000030 /* GravityWellTests */,
+				A10000000000000000000032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000031 /* GravityWell */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000033 /* App */,
+				A70000000000000000000030 /* Assets */,
+				A10000000000000000000034 /* Views */,
+				A20000000000000000000030 /* Providers */,
+				A10000000000000000000035 /* Models */,
+				A10000000000000000000036 /* Services */,
+				A30000000000000000000030 /* Utilities */,
+			);
+			path = GravityWell;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000010 /* GravityWell.app */,
+				A40000000000000000000010 /* GravityWellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000033 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000011 /* GravityWellApp.swift */,
+				A70000000000000000000013 /* Info.plist */,
+				A60000000000000000000011 /* AppDelegate.swift */,
+				A60000000000000000000012 /* StatusBarController.swift */,
+				A10000000000000000000012 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000034 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000013 /* MenuBarView.swift */,
+				A10000000000000000000014 /* SettingsView.swift */,
+				A30000000000000000000013 /* DashboardPopoverView.swift */,
+				A30000000000000000000014 /* StatsCardView.swift */,
+				A30000000000000000000015 /* TopListView.swift */,
+				A30000000000000000000016 /* ErrorStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000035 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000015 /* PollInterval.swift */,
+				A10000000000000000000016 /* MenuBarDisplayMode.swift */,
+				A10000000000000000000018 /* PiHoleSummary.swift */,
+				A10000000000000000000019 /* TopDomain.swift */,
+				A1000000000000000000001A /* TopClient.swift */,
+				A1000000000000000000001B /* PiHoleStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000036 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000017 /* KeychainService.swift */,
+				A40000000000000000000011 /* LaunchAtLoginService.swift */,
+				A30000000000000000000011 /* PollingService.swift */,
+				A1000000000000000000001C /* PiHoleAPIProviding.swift */,
+				A1000000000000000000001D /* PiHoleAPIError.swift */,
+				A1000000000000000000001E /* NetworkTrustService.swift */,
+				A1000000000000000000001F /* PiHoleAPIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A20000000000000000000030 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000011 /* MonitoringProvider.swift */,
+				A20000000000000000000012 /* MonitoringSnapshot.swift */,
+				A20000000000000000000013 /* MonitoringControl.swift */,
+				A20000000000000000000014 /* MonitoringProviderError.swift */,
+				A20000000000000000000015 /* PiHoleProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000030 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000012 /* Formatters.swift */,
+				A40000000000000000000012 /* Logger.swift */,
+				A40000000000000000000013 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A50000000000000000000030 /* GravityWellTests */ = {
+			isa = PBXGroup;
+			children = (
+				A50000000000000000000011 /* FormattersTests.swift */,
+				A50000000000000000000012 /* PiHoleProviderTests.swift */,
+			);
+			path = GravityWellTests;
+			sourceTree = "<group>";
+		};
+		A70000000000000000000030 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A70000000000000000000011 /* AppIcon.icns */,
+				A70000000000000000000012 /* AppIcon1024.png */,
+				A70000000000000000000014 /* AppIcon1024-White.png */,
+				A70000000000000000000015 /* gravity-well.svg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000040 /* GravityWell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000060 /* Build configuration list for PBXNativeTarget "GravityWell" */;
+			buildPhases = (
+				A10000000000000000000050 /* Sources */,
+				A10000000000000000000020 /* Frameworks */,
+				A70000000000000000000020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GravityWell;
+			packageProductDependencies = (
+			);
+			productName = GravityWell;
+			productReference = A10000000000000000000010 /* GravityWell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000040 /* GravityWellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50000000000000000000060 /* Build configuration list for PBXNativeTarget "GravityWellTests" */;
+			buildPhases = (
+				A50000000000000000000050 /* Sources */,
+				A50000000000000000000020 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50000000000000000000070 /* PBXTargetDependency */,
+			);
+			name = GravityWellTests;
+			packageProductDependencies = (
+			);
+			productName = GravityWellTests;
+			productReference = A40000000000000000000010 /* GravityWellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		A50000000000000000000070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000040 /* GravityWell */;
+			targetProxy = A50000000000000000000071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		A50000000000000000000071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000041 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000000000000000000040;
+			remoteInfo = GravityWell;
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000000000041 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					A10000000000000000000040 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					A50000000000000000000040 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000061 /* Build configuration list for PBXProject "GravityWell" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000030;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A10000000000000000000032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000040 /* GravityWell */,
+				A50000000000000000000040 /* GravityWellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000000000000000000020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70000000000000000000001 /* AppIcon.icns in Resources */,
+				A70000000000000000000002 /* AppIcon1024-White.png in Resources */,
+				A70000000000000000000003 /* gravity-well.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* GravityWellApp.swift in Sources */,
+				A60000000000000000000001 /* AppDelegate.swift in Sources */,
+				A60000000000000000000002 /* StatusBarController.swift in Sources */,
+				A10000000000000000000002 /* AppState.swift in Sources */,
+				A10000000000000000000003 /* MenuBarView.swift in Sources */,
+				A10000000000000000000004 /* SettingsView.swift in Sources */,
+				A10000000000000000000005 /* PollInterval.swift in Sources */,
+				A10000000000000000000006 /* MenuBarDisplayMode.swift in Sources */,
+				A10000000000000000000007 /* KeychainService.swift in Sources */,
+				A10000000000000000000008 /* PiHoleSummary.swift in Sources */,
+				A10000000000000000000009 /* TopDomain.swift in Sources */,
+				A1000000000000000000000A /* TopClient.swift in Sources */,
+				A1000000000000000000000B /* PiHoleStatus.swift in Sources */,
+				A1000000000000000000000C /* PiHoleAPIProviding.swift in Sources */,
+				A1000000000000000000000D /* PiHoleAPIError.swift in Sources */,
+				A1000000000000000000000E /* NetworkTrustService.swift in Sources */,
+				A1000000000000000000000F /* PiHoleAPIClient.swift in Sources */,
+				A20000000000000000000001 /* MonitoringProvider.swift in Sources */,
+				A20000000000000000000002 /* MonitoringSnapshot.swift in Sources */,
+				A20000000000000000000003 /* MonitoringControl.swift in Sources */,
+				A20000000000000000000004 /* MonitoringProviderError.swift in Sources */,
+				A20000000000000000000005 /* PiHoleProvider.swift in Sources */,
+				A30000000000000000000001 /* PollingService.swift in Sources */,
+				A30000000000000000000002 /* Formatters.swift in Sources */,
+				A40000000000000000000001 /* LaunchAtLoginService.swift in Sources */,
+				A40000000000000000000002 /* Logger.swift in Sources */,
+				A40000000000000000000003 /* Constants.swift in Sources */,
+				A30000000000000000000003 /* DashboardPopoverView.swift in Sources */,
+				A30000000000000000000004 /* StatsCardView.swift in Sources */,
+				A30000000000000000000005 /* TopListView.swift in Sources */,
+				A30000000000000000000006 /* ErrorStateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50000000000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50000000000000000000001 /* FormattersTests.swift in Sources */,
+				A50000000000000000000002 /* PiHoleProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000000000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10000000000000000000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A10000000000000000000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GravityWell/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyreece.GravityWell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GravityWell/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyreece.GravityWell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A50000000000000000000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyreece.GravityWellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GravityWell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GravityWell";
+			};
+			name = Debug;
+		};
+		A50000000000000000000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyreece.GravityWellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GravityWell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GravityWell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000060 /* Build configuration list for PBXNativeTarget "GravityWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000072 /* Debug */,
+				A10000000000000000000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000061 /* Build configuration list for PBXProject "GravityWell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000070 /* Debug */,
+				A10000000000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50000000000000000000060 /* Build configuration list for PBXNativeTarget "GravityWellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50000000000000000000072 /* Debug */,
+				A50000000000000000000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000000000041 /* Project object */;
+}
