@@ -132,7 +132,7 @@ struct DashboardPopoverView: View {
                             Task { await appState.performControl(.disableBlocking(seconds: 3_600)) }
                         }
                     } label: {
-                        Label("Pause", systemImage: "pause.circle")
+                        Text(Image(systemName: "pause.circle")) + Text("  Pause")
                     }
                     .menuStyle(.button)
                     .disabled(appState.isControlInFlight || appState.displayStatus != .online)
