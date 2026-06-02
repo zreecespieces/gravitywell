@@ -42,12 +42,12 @@ struct StatsCardView: View {
                     .accessibilityLabel("Queries per minute for the last hour")
             }
 
-            HStack(spacing: 8) {
-                Spacer()
-
+            HStack(alignment: .bottom, spacing: 8) {
                 Text("Last Updated: \(Formatters.time(snapshot.lastUpdated))")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+
+                Spacer()
 
                 Button(action: refreshAction) {
                     if isRefreshing {
